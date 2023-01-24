@@ -1,0 +1,192 @@
+/****** RESET CSS *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    color: inherit;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+figure {
+    margin: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+cite {
+    font-style: normal;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.top__bar {
+    height: 54px;
+    background: #2A41E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__bar__left {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 64px;
+}
+
+.top__bar__item {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.top__bar__btn {
+    width: 15%;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.nav__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+}
+
+.fig__logo {
+    width: 248px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title {
+    color: #4B4D4F;
+    font-size: 28px;
+
+}
+
+.title__span {
+    font-weight: 500;
+    color: #4B4D4F;
+}
+
+.nav__list {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__item {
+    font-weight: 500;
+    font-size: 14px;
+    color: #4B4D4F;
+}
+
+.nav__item:first-child {
+    color: #2A41E8;
+}
+
+.nav__item:last-child {
+    width: 35%;
+    text-align: center;
+}
+
+.nav__sbmt__btn {
+    width: 15%;
+    height: 100%;
+    background-color: #FF5E14;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.hero {
+    height: 584px;
+    background-image: url(../images/hero-bg-image.jpg);
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-position: 0% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero__title{
+    display: block;
+    width: 75%;
+    font-weight: 500;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+.hero__title h3{
+    font-size: 18px;
+    margin-bottom: 32px;
+}

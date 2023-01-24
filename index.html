@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/searchBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Casa Royal</title>
+</head>
+
+<body>
+    <header>
+        <div class="top__bar">
+            <ul class="top__bar__left">
+                <li class="top__bar__item">1441 Market St. San Francisco</li>
+                <li class="top__bar__item">(123) 456-7890</li>
+                <li class="top__bar__item">Mon-Sun 8:00am - 6:00pm</li>
+            </ul>
+            <button class="top__bar__btn">Login/Register</button>
+        </div>
+        <nav class="nav__bar">
+            <figure class="fig__logo">
+                <img src="./images/Logo.png" alt="Casa Royale Logo">
+                <h1 class="title">casa
+                    <span class="title__span">
+                        Royal
+                    </span>
+                </h1>
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__item">HOMEPAGE</li>
+                <li class="nav__item">PROPERTIES</li>
+                <li class="nav__item">AGENCIES</li>
+                <li class="nav__item">PAGES</li>
+                <li class="nav__item">ABOUT</li>
+                <li class="nav__item">CONTACT</li>
+                <li class="nav__item" id="nav_compare">COMPARE</li>
+            </ul>
+            <button class="nav__sbmt__btn">SUBMIT LISTING</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__title">
+                <h2>Let US Guide You Home</h2>
+                <h3>Find the house of your dreams</h3>
+            </div>
+            <nav class="search-bar">
+                <div class="custom-select">
+                    <label for="property-type" class="custom-select__label">Type:</label>
+                    <div class="custom-select__selected" id="property-type-selected">Select type</div>
+                    <div class="custom-select__options">
+                        <div class="custom-select__option" data-value="HOUSE">House</div>
+                        <div class="custom-select__option" data-value="APARTMENT">Apartment</div>
+                        <div class="custom-select__option" data-value="FARM">Farm</div>
+                        <div class="custom-select__option" data-value="BUSINESS">Business</div>
+                    </div>
+                </div>
+                <div class="custom-select">
+                    <label for="property-type" class="custom-select__label">Status:</label>
+                    <div class="custom-select__selected" id="property-type-selected">Select status</div>
+                    <div class="custom-select__options">
+                        <div class="custom-select__option" data-value="SALE">For Sale</div>
+                        <div class="custom-select__option" data-value="RENT">For Rent</div>
+                    </div>
+                </div>
+                <input class="main__input" id="search" placeholder="Search for properties">
+                <button class="main__btn" id="search-btn">FIND PROPERTIES</button>
+
+            </nav>
+
+        </section>
+    </main>
+
+    <script src="./scripts/script.js" type="module"></script>
+    <script src="./scripts/searchBar.js" type="module"></script>
+</body>
+
+</html>
